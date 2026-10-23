@@ -5,7 +5,7 @@ Site estático responsivo em HTML, CSS e JavaScript para apresentar o serviço d
 ## Direção visual
 - **Masculino, refinado e futurista:** fundo grafite/preto, efeitos inspirados em aço e acentos dourados.
 - Tipografia moderna com melhor hierarquia visual.
-- Hero com arte vetorial **criada exclusivamente para a página**, que mantém nitidez em telas de diferentes tamanhos.
+- Hero e cartões com artes vetoriais **criadas exclusivamente para a página**, que mantêm nitidez em telas de diferentes tamanhos.
 - Área institucional que **preserva a logo original** enviada pelo proprietário.
 - Galeria com **10 fotografias reais** das joias, separada das artes ilustrativas, sem vender imagens ilustrativas como produtos reais.
 - Formulário local para preparar mensagem sem declarar envio ou agendamento automático.
@@ -16,6 +16,7 @@ Site estático responsivo em HTML, CSS e JavaScript para apresentar o serviço d
 - `script.js`: navegação mobile e formulário.
 - `favicon.svg`: ícone preto e dourado.
 - `img/hero-metal.svg`: ilustração vetorial para o banner principal.
+- `img/joia-estrela.svg` e `img/joia-pendente.svg`: novas ilustrações vetoriais nas seções de destaque, para manter a nitidez sem ampliar imagens comprimidas.
 - `img/logo-oficial.webp`: marca gráfica original enviada pelo proprietário.
 - `img/joias-galeria.webp`: mosaico das 10 fotos reais das joias.
 
