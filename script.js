@@ -1,5 +1,5 @@
 /**
- * Piercing of the Dreams — configurações de contato.
+ * Piercing of the Dream — configurações de contato.
  *
  * Adicione o WhatsApp com DDI e DDD, apenas números (ex.: 5531999999999)
  * e/ou a URL completa do Instagram quando houver confirmação do canal.
