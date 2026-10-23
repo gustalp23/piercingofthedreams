@@ -1,43 +1,39 @@
-# Piercing of the Dreams — Website
+# Piercing of the Dream — site oficial
 
-Site estático responsivo em HTML, CSS e JavaScript para apresentar o serviço de body piercing e as joias da marca.
+Website estático responsivo da **Piercing of the Dream**, em HTML, CSS e JavaScript. Identidade visual dark-tech em preto, grafite, metal e dourado.
 
-## Direção visual
-- **Masculino, refinado e futurista:** fundo grafite/preto, efeitos inspirados em aço e acentos dourados.
-- Tipografia moderna com melhor hierarquia visual.
-- Hero e cartões com artes vetoriais **criadas exclusivamente para a página**, que mantêm nitidez em telas de diferentes tamanhos.
-- Área institucional que **preserva a logo original** enviada pelo proprietário.
-- Galeria com **10 fotografias reais** das joias, separada das artes ilustrativas, sem vender imagens ilustrativas como produtos reais.
-- Formulário local para preparar mensagem sem declarar envio ou agendamento automático.
+## Imagens e identidade visual
 
-## Arquivos principais
-- `index.html`: página e seções.
-- `style.css`: identidade visual, cores, grid e responsividade.
-- `script.js`: navegação mobile e formulário.
-- `favicon.svg`: ícone preto e dourado.
-- `img/hero-metal.svg`: ilustração vetorial para o banner principal.
-- `img/joia-estrela.svg` e `img/joia-pendente.svg`: novas ilustrações vetoriais nas seções de destaque, para manter a nitidez sem ampliar imagens comprimidas.
-- `img/logo-oficial.webp`: marca gráfica original enviada pelo proprietário.
-- `img/joias-galeria.webp`: mosaico das 10 fotos reais das joias.
+- `img/logo-oficial-final.webp`: **logo original recebida do estúdio**, preservada sem redesenhar.
+- `img/joias/joia-01.webp` até `img/joias/joia-10.webp`: dez imagens **tratadas/recriadas digitalmente** com inspiração nas fotografias enviadas. São arquivos independentes de 660 × 660 px em WebP, e não um mosaico.
+- `img/hero-metal.svg`, `img/joia-estrela.svg`, `img/joia-pendente.svg`: ilustrações editoriais vetoriais para outros destaques.
 
-A galeria usa o mosaico existente com imagens pequenas para minimizar ampliação/pixelização. Para qualidade fotográfica de catálogo, o ideal no futuro é substituir essa versão comprimida por arquivos individuais das fotos originais em resolução maior.
+**Importante:** as imagens tratadas podem diferir das peças reais em detalhes e acabamentos. Confirme fotos específicas, materiais, modelos e disponibilidade antes de qualquer compra ou aplicação. O site não anuncia preços não informados nem simula agendamento confirmado.
 
-## Contatos
-Preencher os canais oficiais no começo de `script.js`:
+## Estrutura
+
+- `index.html`: página inicial, coleção, galeria, processo, cuidados e contato.
+- `style.css`: layout responsivo e identidade visual.
+- `script.js`: navegação mobile e formulário que prepara uma mensagem copiável.
+- `favicon.svg`: ícone do navegador.
+
+## Configurar o atendimento
+
+No início do `script.js`:
 
 ```js
 const CONTACT = {
-  whatsapp: "", // DDI, DDD e número, apenas dígitos
-  instagram: "" // URL completa do perfil
+  whatsapp: "", // 55 + DDD + número
+  instagram: "" // URL completa do perfil oficial
 };
 ```
 
-Quando esses campos não estão preenchidos, não são inventados links de contato. O formulário apenas monta uma mensagem copiável.
+Enquanto esses campos estiverem vazios, o site não informa números nem links inexistentes. O formulário somente prepara uma mensagem, sem envio automático.
 
-## Publicação com GitHub Pages
-Em `Settings > Pages > Build and deployment`, selecionar `Deploy from a branch`, branch `main` e pasta `/(root)`. Publicação depende da configuração e do deploy da plataforma.
+## GitHub Pages
 
-URL esperada após publicação: https://gustalp23.github.io/piercingofthedreams/
+Em `Settings → Pages`, configure `Deploy from a branch`, branch `main`, pasta `/(root)`. A implantação pode ser acompanhada em `Actions`.
 
-## Cuidados
-O conteúdo sobre cuidados é geral e inclui referência à [Association of Professional Piercers](https://safepiercing.org/aftercare/). Não substitui avaliação individual nem orientação de saúde. Preços, disponibilidade e locais de aplicação devem ser confirmados.
+URL esperada: https://gustalp23.github.io/piercingofthedreams/
+
+Orientações gerais de cuidados baseadas na [Association of Professional Piercers](https://safepiercing.org/aftercare/), sem substituir avaliação individual.
