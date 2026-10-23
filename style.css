@@ -24,3 +24,16 @@
 @media(min-width:921px){.hero h1{font-size:clamp(49px,5.15vw,77px)}}
 @media(max-width:920px){.official-logo{margin-top:20px}}
 @media(max-width:650px){.official-logo{width:190px;height:105px;background-size:268px 268px;margin-top:10px}.footer-official-logo{width:185px;height:95px;background-size:260px 260px}}
+
+/* Correção da galeria — preserva a resolução nativa do material existente
+   em vez de esticar 140 px até preencher o cartão. */
+.gallery-stage{height:auto;aspect-ratio:1.08;display:grid;place-items:center;position:relative;isolation:isolate;overflow:hidden;background:radial-gradient(ellipse at 50% 46%,#33313b 0%,#22252b 43%,#101419 76%);border-bottom:1px solid #c6a3682c}
+.gallery-stage:before{content:"";position:absolute;inset:10%;border:1px solid #d4b87827;pointer-events:none}
+.gallery-stage:after{content:"";position:absolute;width:74%;height:74%;border-radius:50%;background:#c2a77a12;filter:blur(29px);z-index:-1}
+.gallery-stage .gallery-photo{width:140px;height:140px;min-width:140px;min-height:140px;aspect-ratio:1;position:relative;z-index:1;background-size:700px 280px;box-shadow:0 12px 32px #0009;filter:contrast(1.07) saturate(.95);border:1px solid #ffffff24;transition:transform .25s ease}
+.gallery-card:hover .gallery-stage .gallery-photo{transform:translateY(-4px)}
+.gallery-stage-line{position:absolute;bottom:13px;left:14px;width:22px;height:1px;background:#b89a67}
+.gallery-stage-symbol{position:absolute;top:8px;right:13px;font-size:13px;color:#c5aa77}
+.gallery-card{background:#161b20}
+.gallery-meta{border-top:1px solid #ffffff0e}
+@media(max-width:650px){.gallery-stage .gallery-photo{transform:scale(.90)}.gallery-card:hover .gallery-stage .gallery-photo{transform:scale(.9)}.gallery-stage{aspect-ratio:1.02}.gallery-stage:before{inset:7%}}
