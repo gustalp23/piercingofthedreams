@@ -1,41 +1,42 @@
-# Piercing of the Dreams ✧
+# Piercing of the Dreams — Website
 
-Site institucional responsivo em português brasileiro, feito com HTML, CSS e JavaScript, sem dependências de build.
+Site estático responsivo em HTML, CSS e JavaScript para apresentar o serviço de body piercing e as joias da marca.
 
-## Arquivos
-- `index.html`: conteúdo e seções da página.
-- `style.css`: identidade visual e ajustes de tela.
-- `script.js`: menu mobile e preparação de mensagem de contato.
-- `favicon.svg`: ícone do navegador.
-- `img/logo-oficial.webp`: logo oficial enviada pelo proprietário (versão otimizada para web).
-- `img/joias-galeria.webp`: imagem otimizada com as dez fotografias das joias, usadas individualmente no site por posicionamento CSS.
+## Direção visual
+- **Masculino, refinado e futurista:** fundo grafite/preto, efeitos inspirados em aço e acentos dourados.
+- Tipografia moderna com melhor hierarquia visual.
+- Hero com arte vetorial **criada exclusivamente para a página**, que mantém nitidez em telas de diferentes tamanhos.
+- Área institucional que **preserva a logo original** enviada pelo proprietário.
+- Galeria com **10 fotografias reais** das joias, separada das artes ilustrativas, sem vender imagens ilustrativas como produtos reais.
+- Formulário local para preparar mensagem sem declarar envio ou agendamento automático.
 
-## Como personalizar os contatos
-Abra `script.js` e configure:
+## Arquivos principais
+- `index.html`: página e seções.
+- `style.css`: identidade visual, cores, grid e responsividade.
+- `script.js`: navegação mobile e formulário.
+- `favicon.svg`: ícone preto e dourado.
+- `img/hero-metal.svg`: ilustração vetorial para o banner principal.
+- `img/logo-oficial.webp`: marca gráfica original enviada pelo proprietário.
+- `img/joias-galeria.webp`: mosaico das 10 fotos reais das joias.
+
+A galeria usa o mosaico existente com imagens pequenas para minimizar ampliação/pixelização. Para qualidade fotográfica de catálogo, o ideal no futuro é substituir essa versão comprimida por arquivos individuais das fotos originais em resolução maior.
+
+## Contatos
+Preencher os canais oficiais no começo de `script.js`:
 
 ```js
 const CONTACT = {
-  whatsapp: "", // Apenas números, incluindo DDI 55 e DDD
-  instagram: ""  // URL completa: https://www.instagram.com/seuusuario/
+  whatsapp: "", // DDI, DDD e número, apenas dígitos
+  instagram: "" // URL completa do perfil
 };
 ```
 
-Somente links configurados são exibidos. O formulário **não envia dados**: prepara uma mensagem para cópia e, quando existe WhatsApp configurado, permite abrir a conversa com o texto preenchido. Não há confirmação automática de agendamento.
+Quando esses campos não estão preenchidos, não são inventados links de contato. O formulário apenas monta uma mensagem copiável.
 
-## Antes de divulgar
-- Informar e conferir os contatos oficiais.
-- As fotografias enviadas estão integradas à vitrine, mas confirme peças disponíveis e permissão para publicação das imagens.
-- Confirmar os procedimentos disponíveis, valores, local e horários de atendimento.
-- Validar instruções pós-procedimento com o profissional.
+## Publicação com GitHub Pages
+Em `Settings > Pages > Build and deployment`, selecionar `Deploy from a branch`, branch `main` e pasta `/(root)`. Publicação depende da configuração e do deploy da plataforma.
 
-O site utiliza a logomarca enviada e fotos reais das joias; o mosaico foi comprimido para carregamento rápido e será interessante substituí-lo por arquivos individuais em alta resolução futuramente. A seção de cuidados oferece informações gerais com referência à [Association of Professional Piercers](https://safepiercing.org/aftercare/).
+URL esperada após publicação: https://gustalp23.github.io/piercingofthedreams/
 
-## Publicar no GitHub Pages
-
-Em **Settings → Pages → Build and deployment → Deploy from a branch**, selecione `main` e `/(root)`, depois clique em Save.
-
-Quando a publicação for concluída, o endereço previsto é:
-
-https://gustalp23.github.io/piercingofthedreams/
-
-> Salvar os arquivos não confirma a publicação. É preciso configurar o GitHub Pages e aguardar a implantação.
+## Cuidados
+O conteúdo sobre cuidados é geral e inclui referência à [Association of Professional Piercers](https://safepiercing.org/aftercare/). Não substitui avaliação individual nem orientação de saúde. Preços, disponibilidade e locais de aplicação devem ser confirmados.
