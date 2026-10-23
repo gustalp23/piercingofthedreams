@@ -25,17 +25,47 @@
 @media(max-width:920px){.official-logo{margin-top:20px}}
 @media(max-width:650px){.official-logo{width:190px;height:105px;background-size:268px 268px;margin-top:10px}.footer-official-logo{width:185px;height:95px;background-size:260px 260px}}
 
-/* Logo original da marca: fundo bicolor para manter contrastes dos caracteres pretos,
-   prateados e dourados sem recolorir a arte enviada. */
-.logo-panel{display:inline-flex;justify-content:center;align-items:center;flex:none;padding:3px 8px 6px;border:1px solid rgba(210,183,124,.55);background:linear-gradient(to bottom,#a8afb4 0 61%,#161a1e 61% 100%);box-shadow:inset 0 0 0 1px rgba(0,0,0,.15),0 8px 22px #0006}
-.header-logo{width:172px;height:auto;display:block}
-.brand-with-logo{gap:0;padding:2px 0}
-.header-inner{height:92px}
-.footer-logo-panel{padding:6px 12px 8px}
-.footer-logo{width:238px;height:auto;display:block}
-.concept-logo-holder{background:linear-gradient(to bottom,#a8afb4 0 61%,#161a1e 61% 100%);border:1px solid #b69b69;max-width:255px;margin-top:43px;padding:8px 12px;box-shadow:0 18px 30px #0005}
-.concept-logo{width:100%;height:auto}
+/* Logo original sem caixa cinza — contraste só nas letras negras
+   A máscara usa o alfa do próprio logo; a arte e os detalhes dourados
+   continuam sendo o arquivo original do estúdio. */
+.logo-panel{
+  position:relative;display:block;flex:none;width:185px;
+  aspect-ratio:557 / 273;line-height:0;isolation:isolate;
+  background:transparent;border:0;border-radius:0;
+  box-shadow:none;padding:0;margin:0;overflow:visible;
+}
+.logo-panel img{
+  display:block;width:100%;height:100%;max-width:100%;
+  object-fit:contain;filter:none;
+}
+.logo-panel::after{
+  content:"";position:absolute;inset:0;z-index:2;pointer-events:none;
+  background:linear-gradient(103deg,#bbc4ce 0%,#f1f3f2 48%,#c1cbd0 90%);
+  -webkit-mask-image:url("img/logo-oficial-final.webp");
+  mask-image:url("img/logo-oficial-final.webp");
+  -webkit-mask-size:100% 100%;mask-size:100% 100%;
+  -webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;
+  -webkit-mask-position:center;mask-position:center;
+  clip-path:polygon(0 0,80% 0,80% 60%,9% 60%,9% 69%,0 69%);
+}
+.brand-with-logo{display:flex;align-items:center;gap:0;padding:0;line-height:0}
+.header-inner{height:96px}
+.header-logo,.footer-logo,.concept-logo{width:100%;height:100%}
+.logo-panel--concept{width:220px;margin-top:28px}
+.logo-panel--footer{width:215px}
 .official-logo,.footer-official-logo{display:none}
+@media(max-width:920px){
+  .header-inner{height:84px}
+  .brand-with-logo .logo-panel{width:164px}
+  .logo-panel--concept{width:204px}
+}
+@media(max-width:650px){
+  .header-inner{height:75px}
+  .brand-with-logo .logo-panel{width:138px}
+  .logo-panel--footer{width:185px}
+  .logo-panel--concept{width:190px}
+}
+
 /* Cards fotográficos com arquivos reais individuais a 660px, sem mosaico */
 .gallery-grid{gap:17px}
 .gallery-card{background:#171c21;border:1px solid rgba(210,183,124,.21);overflow:hidden;position:relative}
@@ -49,6 +79,6 @@
 .gallery-meta span{font:700 10px var(--font);color:#d9be83;letter-spacing:.05em}
 .gallery-meta a{font:700 10px var(--font);color:#cdd1d2;white-space:nowrap}
 .gallery-meta a:hover{color:#f4d99f}
-@media(max-width:920px){.header-inner{height:82px}.header-logo{width:154px}.gallery-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
-@media(max-width:650px){.header-inner{height:74px}.header-logo{width:128px}.logo-panel{padding:2px 5px 4px}.gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.gallery-meta{min-height:66px;padding:13px 10px}.gallery-meta span,.gallery-meta a{font-size:9px}.gallery-stage{aspect-ratio:1}.footer-logo{width:210px}.concept-logo-holder{max-width:220px}}
+@media(max-width:920px){.gallery-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:650px){.gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.gallery-meta{min-height:66px;padding:13px 10px}.gallery-meta span,.gallery-meta a{font-size:9px}.gallery-stage{aspect-ratio:1}}
 @media(prefers-reduced-motion:reduce){.gallery-card:hover .gallery-image{transform:none}}
