@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" fill="none">
+<defs><linearGradient id="metal" x1="120" x2="600" y1="70" y2="690"><stop stop-color="#4b5660"/><stop offset=".16" stop-color="#f8ffff"/><stop offset=".32" stop-color="#687783"/><stop offset=".51" stop-color="#ecf4f6"/><stop offset=".7" stop-color="#3c4955"/><stop offset=".9" stop-color="#d9e5e9"/></linearGradient><radialGradient id="gem" cx=".25" cy=".23" r=".79"><stop stop-color="#fff"/><stop offset=".25" stop-color="#d7eff9"/><stop offset=".47" stop-color="#768d9e"/><stop offset=".73" stop-color="#f0faff"/><stop offset="1" stop-color="#526576"/></radialGradient><linearGradient id="gold" x1="0" x2="1"><stop stop-color="#725524"/><stop offset=".5" stop-color="#fae4aa"/><stop offset="1" stop-color="#9b7538"/></linearGradient><filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="17" dy="25" stdDeviation="14" flood-opacity=".85"/></filter><g id="bezel"><circle r="64" fill="#0b1015" stroke="url(#gold)" stroke-width="11"/><circle r="53" fill="url(#metal)"/><circle r="44" fill="url(#gem)"/><path d="M-23-28 26 22M25-29-20 23M-41 0h82M0-40v80" stroke="#effcff" stroke-width="3.5" opacity=".55"/><circle cx="-10" cy="-11" r="11" fill="#fff" opacity=".8"/></g></defs>
+<g stroke="#9a814d" opacity=".5"><circle cx="408" cy="408" r="308" stroke-dasharray="7 16"/><circle cx="408" cy="408" r="257"/><path d="M408 47v66m0 591v61M42 408h73m591 0h61"/></g>
+<g filter="url(#shadow)" transform="rotate(17 400 390)">
+<rect x="386" y="164" width="28" height="152" rx="14" fill="url(#metal)"/>
+<use href="#bezel" x="400" y="210"/>
+<ellipse cx="400" cy="300" rx="27" ry="40" stroke="url(#metal)" stroke-width="17"/>
+<rect x="389" y="301" width="22" height="108" rx="11" fill="url(#metal)"/>
+<use href="#bezel" x="400" y="441" transform="translate(400 441) scale(1.28) translate(-400 -441)"/>
+<ellipse cx="400" cy="550" rx="22" ry="29" stroke="url(#metal)" stroke-width="12"/>
+<use href="#bezel" x="400" y="613" transform="translate(400 613) scale(.63) translate(-400 -613)"/>
+</g><path d="M166 230h52m-26-26v52M603 600h44m-22-22v44" stroke="#d1b06f" stroke-width="2"/><text x="110" y="729" fill="#bba16d" font-family="Arial,sans-serif" font-size="12" letter-spacing="6">SIGNATURE / 03</text>
+</svg>
