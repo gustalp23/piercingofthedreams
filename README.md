@@ -6,7 +6,9 @@ Site institucional responsivo em português brasileiro, feito com HTML, CSS e Ja
 - `index.html`: conteúdo e seções da página.
 - `style.css`: identidade visual e ajustes de tela.
 - `script.js`: menu mobile e preparação de mensagem de contato.
-- `favicon.svg`: ícone próprio.
+- `favicon.svg`: ícone do navegador.
+- `img/logo-oficial.webp`: logo oficial enviada pelo proprietário (versão otimizada para web).
+- `img/joias-galeria.webp`: imagem otimizada com as dez fotografias das joias, usadas individualmente no site por posicionamento CSS.
 
 ## Como personalizar os contatos
 Abra `script.js` e configure:
@@ -22,11 +24,11 @@ Somente links configurados são exibidos. O formulário **não envia dados**: pr
 
 ## Antes de divulgar
 - Informar e conferir os contatos oficiais.
-- Substituir imagens ilustrativas por fotografias próprias autorizadas.
+- As fotografias enviadas estão integradas à vitrine, mas confirme peças disponíveis e permissão para publicação das imagens.
 - Confirmar os procedimentos disponíveis, valores, local e horários de atendimento.
 - Validar instruções pós-procedimento com o profissional.
 
-As imagens do Unsplash são ilustrativas e não representam trabalhos realizados pelo estúdio. A seção de cuidados inclui orientações gerais com referência à [Association of Professional Piercers](https://safepiercing.org/aftercare/).
+O site utiliza a logomarca enviada e fotos reais das joias; o mosaico foi comprimido para carregamento rápido e será interessante substituí-lo por arquivos individuais em alta resolução futuramente. A seção de cuidados oferece informações gerais com referência à [Association of Professional Piercers](https://safepiercing.org/aftercare/).
 
 ## Publicar no GitHub Pages
 
