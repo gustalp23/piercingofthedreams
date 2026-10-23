@@ -20,3 +20,31 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
 
 [hidden]{display:none!important}
+
+/* Identidade original e vitrine de joias — outubro de 2026 */
+.logo-frame{display:flex;align-items:center;width:174px;height:76px;overflow:hidden}
+.brand-logo{display:block;width:174px;height:76px;flex:none;background-image:url("img/logo-oficial.webp");background-position:center 46%;background-size:239px 239px;background-repeat:no-repeat;mix-blend-mode:screen}
+.brand-footer-frame{display:flex;align-items:center;max-width:240px;overflow:hidden}
+.footer-brand-logo{display:block;width:226px;height:107px;flex:none;background-image:url("img/logo-oficial.webp");background-position:center 46%;background-size:317px 317px;background-repeat:no-repeat;mix-blend-mode:screen}
+.jewel-photo{background-image:url("img/joias-galeria.webp");background-repeat:no-repeat;background-size:500% 200%;background-position:var(--gx,0%) var(--gy,0%);background-color:#c6adbe}
+.hero-real-photo{width:100%;height:100%;filter:saturate(.86) contrast(1.03);transition:transform .65s ease}
+.hero-image-wrap:hover .hero-real-photo{transform:scale(1.035)}
+.style-real-photo{width:100%;height:100%;filter:saturate(.78) contrast(1.04);transition:transform .65s ease}
+.style-card:hover .style-real-photo{transform:scale(1.07)}
+.jewels-gallery{background:#fffbf8}
+.gallery-heading{margin-bottom:43px}
+.gallery-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:18px}
+.gallery-card{background:#f6eeee;overflow:hidden;transition:transform .25s ease,box-shadow .25s ease;box-shadow:0 12px 29px rgba(53,29,49,.05)}
+.gallery-card:hover{transform:translateY(-5px);box-shadow:0 18px 40px rgba(53,29,49,.12)}
+.gallery-picture{aspect-ratio:1/1;width:100%;transition:filter .25s}
+.gallery-card:hover .gallery-picture{filter:contrast(1.08) saturate(1.1)}
+.gallery-meta{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:18px 15px;color:#382531;background:#f8f0f2}
+.gallery-meta span{font:800 9px var(--sans);letter-spacing:.12em;color:#b48098}
+.gallery-meta a{font:700 10px var(--sans);border-bottom:1px solid #b78099;padding-bottom:5px;white-space:nowrap}
+.gallery-meta a:hover{color:#a55c83}
+.gallery-foot{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:18px;margin-top:26px}
+.gallery-foot p{font:400 12px/1.8 var(--body);color:#89737f}
+.gallery-foot .underline-link{margin-top:0}
+@media(max-width:1070px){.gallery-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:720px){.gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.gallery-meta{padding:14px 10px}.gallery-meta span{font-size:8px}.gallery-meta a{font-size:9px}.gallery-heading{margin-bottom:30px}.footer-brand-logo{background-size:305px 305px}}
+@media(max-width:420px){.logo-frame,.brand-logo{width:151px;height:66px}.brand-logo{background-size:211px 211px}.gallery-meta{flex-wrap:wrap;gap:5px}}
